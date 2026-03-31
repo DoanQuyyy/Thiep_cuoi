@@ -523,6 +523,7 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 1px;
     display: block; /* Tránh viền dưới như phần trên */
+    padding-top: 10px;
 }
 
 .event-time {
@@ -643,13 +644,13 @@ h2 {
 /* Vị trí nút Nhà Gái (Góc trên phải) */
 .btn-top-right {
     top: 24%; /* Khoảng cách từ trên xuống */
-    right: 4%; /* Khoảng cách từ lề phải */
+    right: 3%; /* Khoảng cách từ lề phải */
 }
 
 /* Vị trí nút Nhà Trai (Góc dưới trái) */
 .btn-bottom-left {
-    bottom: -8%; /* Khoảng cách từ dưới lên (điều chỉnh để nút không bị cắt) */
-    left: 3.0%; /* Khoảng cách từ lề trái */
+    bottom: -10%; /* Khoảng cách từ dưới lên (điều chỉnh để nút không bị cắt) */
+    left: 2.0%; /* Khoảng cách từ lề trái */
 }
 
 /* Responsive để chỉnh lại nút trên điện thoại cho khỏi bị lệch */
@@ -793,7 +794,7 @@ h2 {
 
 .message-text {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 13px;
+    font-size: 80%;
     color: #222;
     line-height: 1.8;
 }
