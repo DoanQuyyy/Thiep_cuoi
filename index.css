@@ -150,7 +150,9 @@ h2 {
 }
 .cover-photo {
     width: 100%;
-    height: auto;
+    height: 100vh; /* Thiết lập chiều cao bằng 100% chiều cao màn hình hiển thị */
+    object-fit: cover; /* Đảm bảo ảnh phủ kín khung hình, phần thừa sẽ tự động bị cắt đi mà không làm méo ảnh */
+    object-position: center top; /* Căn giữ trọng tâm ảnh ở giữa và phía trên (phù hợp với ảnh cưới) */
     display: block;
 }
 /* Khối chữ thư mời trôi nổi */
@@ -649,7 +651,7 @@ h2 {
 
 /* Vị trí nút Nhà Trai (Góc dưới trái) */
 .btn-bottom-left {
-    bottom: -10%; /* Khoảng cách từ dưới lên (điều chỉnh để nút không bị cắt) */
+    bottom: -11%; /* Khoảng cách từ dưới lên (điều chỉnh để nút không bị cắt) */
     left: 2.0%; /* Khoảng cách từ lề trái */
 }
 
