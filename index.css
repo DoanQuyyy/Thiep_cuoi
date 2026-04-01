@@ -166,26 +166,25 @@ h2 {
     text-align: center;
     color: #8a151b;
     font-family: 'Times New Roman', Times, serif;
-    padding: 15px;
+    padding: 0px 15px;
     border-radius: 8px;
 }
 
 .invitation-overlay .title {
-    font-size: 18px; /* Chữ to trên PC */
+    font-size: 80%; /* Chữ to trên PC */
     font-weight: bold;
-    margin-bottom: 5px;
+    
 }
 
 .invitation-overlay .time,
 .invitation-overlay .date {
     font-size: 15px;
-    margin: 3px 0;
+
 }
 
 .invitation-overlay .divider {
     border: none;
     border-top: 1.5px solid #8a151b;
-    margin: 8px 0;
 }
 
 
