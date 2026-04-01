@@ -109,7 +109,7 @@ h2 {
 
 .name-hieu{
     font-size: 150%; /* Phóng to kích thước chữ */
-    margin-right: 50%; /* Đẩy chữ Hiếu lệch sang trái */
+    margin-right: 80%; /* Đẩy chữ Hiếu lệch sang trái */
     line-height: 1; /* Thu gọn khoảng cách dòng */
 }
 
@@ -139,14 +139,15 @@ h2 {
 @media (max-width: 600px) {
     .music-icon { width: 2rem; height: 2rem; top: 1rem; right: 1rem; }
     .name-overlay { top: 4.5rem; right: 1rem; }
-    .name-hieu, .name-hoai { font-size: 170%; margin-right: 30px; margin-left: 30px; }
+    .name-hieu { font-size: 170%; margin-left: 10px; }
+    .name-hoai { font-size: 170%; margin-right: 30px; margin-left: 30px; }
     .heart-k-image { width: 1.5rem; }
 }
 
 @media (max-width: 400px) {
     .music-icon { width: 1.5rem; height: 1.5rem; top: 0.75rem; right: 0.75rem; }
     .name-overlay { top: 4rem; right: 0.5rem; }
-    .name-hieu { font-size: 150%; margin-left: 20%; }
+    .name-hieu { font-size: 150%; margin-left: 10%; }
     .name-hoai { font-size: 150%; margin-right: 5%; margin-top: 5px;  }
     .heart-k-image { width: 1.2rem; }
 }

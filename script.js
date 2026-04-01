@@ -425,14 +425,36 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (openBtn && introScreen) {
         openBtn.addEventListener("click", function() {
+            
+            // --- ĐOẠN MÃ MỚI: XỬ LÝ HIỆU ỨNG CHẠY LẠI TỪ ĐẦU ---
+            // Lấy tất cả các phần tử có hiệu ứng trong phần header
+            const headerReveals = document.querySelectorAll('header .reveal-left, header .reveal-right, header .reveal-up');
+            
+            // 1. Ép các phần tử này quay về trạng thái ẩn ngay lập tức (tắt thời gian chuyển động để không bị giật lùi)
+            headerReveals.forEach(el => {
+                el.style.transitionDuration = '0s'; 
+                el.classList.remove('active');
+            });
+
+            // Ép trình duyệt cập nhật lại trạng thái ngay lập tức
+            void document.body.offsetHeight; 
+
+            // 2. Bật lại thời gian chuyển động và kích hoạt hiệu ứng
+            headerReveals.forEach(el => {
+                el.style.transitionDuration = ''; 
+                // Chờ 0.2s cho màn hình intro bắt đầu kéo lên rồi mới chạy hiệu ứng chữ
+                setTimeout(() => {
+                    el.classList.add('active');
+                }, 200); 
+            });
+            // --------------------------------------------------
+
             // Thêm class .hidden để chạy CSS Animation trượt màn hình lên trên
             introScreen.classList.add("hidden");
 
             // Kích hoạt nhạc tự động chạy ngay sau khi người dùng tương tác (Bấm nút mở)
             if (bgMusic) {
                 bgMusic.play().then(() => {
-                    // Nếu web có biến isPlaying ở trên, bạn nên đồng bộ nó
-                    // isPlaying = true; 
                     if(musicBtn) {
                         musicBtn.classList.add('playing');
                         musicBtn.classList.remove('pause');
