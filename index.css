@@ -525,6 +525,7 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 1px;
     display: block; /* Tránh viền dưới như phần trên */
+    padding-top: 10px;
 }
 
 .event-time {
