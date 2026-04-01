@@ -525,7 +525,6 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 1px;
     display: block; /* Tránh viền dưới như phần trên */
-    padding-top: 10px;
 }
 
 .event-time {
@@ -613,7 +612,7 @@ h2 {
 .map-illustration {
     position: relative;
     /* Chỉnh lề âm để ảnh lấn lên vùng văn bản phía trên */
-    margin-top: -70px; /* Điều chỉnh giá trị này để tạo độ lấn vừa ý */
+    margin-top: -10%; /* Điều chỉnh giá trị này để tạo độ lấn vừa ý */
     z-index: 1; /* Đặt z-index thấp hơn văn bản */
     width: 90%;
     max-width: 500px;
