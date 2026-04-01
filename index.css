@@ -108,15 +108,15 @@ h2 {
 }
 
 .name-hieu{
-    font-size: 1.5rem; /* Phóng to kích thước chữ */
-    margin-right: 30px; /* Đẩy chữ Hiếu lệch sang trái */
+    font-size: 150%; /* Phóng to kích thước chữ */
+    margin-right: 50%; /* Đẩy chữ Hiếu lệch sang trái */
     line-height: 1; /* Thu gọn khoảng cách dòng */
 }
 
 .heart-k-wrapper {
     display: flex;
     justify-content: center;
-    margin: 4px 0; /* Kéo trái tim sát lại với chữ trên và dưới */
+    margin: 10px 0; /* Kéo trái tim sát lại với chữ trên và dưới */
     z-index: 2; /* Đảm bảo trái tim nổi lên trên */
 }
 
@@ -128,9 +128,10 @@ h2 {
 }
 
 .name-hoai {
-    font-size: 1.5rem; /* Phóng to kích thước chữ */
-    margin-left: 30px; /* Đẩy chữ Hoài lệch sang phải */
+    font-size: 150%; /* Phóng to kích thước chữ */
+    margin-left: 50%; /* Đẩy chữ Hoài lệch sang phải */
     line-height: 1;
+    margin-top: 5px;
 }
 
 /* Thêm Media Queries để co giãn trên thiết bị di động */
@@ -138,14 +139,15 @@ h2 {
 @media (max-width: 600px) {
     .music-icon { width: 2rem; height: 2rem; top: 1rem; right: 1rem; }
     .name-overlay { top: 4.5rem; right: 1rem; }
-    .name-hieu, .name-hoai { font-size: 2.2rem; margin-right: 30px; margin-left: 30px; }
+    .name-hieu, .name-hoai { font-size: 170%; margin-right: 30px; margin-left: 30px; }
     .heart-k-image { width: 1.5rem; }
 }
 
 @media (max-width: 400px) {
     .music-icon { width: 1.5rem; height: 1.5rem; top: 0.75rem; right: 0.75rem; }
     .name-overlay { top: 4rem; right: 0.5rem; }
-    .name-hieu, .name-hoai { font-size: 1.8rem; margin-right: 25px; margin-left: 25px; }
+    .name-hieu { font-size: 150%; margin-left: 20%; }
+    .name-hoai { font-size: 150%; margin-right: 5%; margin-top: 5px;  }
     .heart-k-image { width: 1.2rem; }
 }
 .cover-photo {
